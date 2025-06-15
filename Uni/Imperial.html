@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .h1 {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        color: rgb(227, 204, 183);
+        transition-duration: 0.2s;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        font-size: 60px;
+      }
+
+      .heading {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .heading:hover {
+        cursor: pointer;
+      }
+
+      .img-h1 {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+        transition: 0.3s;
+        opacity: 0.3;
+        lighting-color: #64564d;
+        display: table;
+        color: #64564d;
+      }
+
+      body {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        background-color: #ecdec9;
+        opacity: 0.8;
+        background-image: radial-gradient(#504742 0.65px, transparent 0.65px),
+          radial-gradient(#59514b 0.65px, #ab9c87 0.65px);
+        background-size: 26px 26px;
+        background-position: 0 0, 13px 13px;
+      }
+
+      .menu-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu {
+        display: block;
+        width: 100px;
+        height: 50px;
+        border: none;
+        background-color: #c5b4a9;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+
+      .menu-head {
+        font-size: 30px;
+        color: #ecdec9;
+        font-weight: bold;
+        font-style: italic;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+      }
+
+      .menu:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+
+      /* unvisited link */
+      a:link {
+        color: #3d3232;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #3d3232;
+        text-decoration: none;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: rgb(140, 125, 107);
+      }
+
+      /* selected link */
+      a:active {
+        color: whitesmoke;
+      }
+
+      h1 {
+        text-align: center;
+        color: #3d3232;
+        font-style: italic;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .cards {
+        flex: 1;
+        margin: 50px;
+        text-align: center;
+      }
+    </style>
+
+    <div class="heading">
+      <div><img src="./ICL O.png" class="img-h1" /></div>
+    </div>
+  </head>
+  <body>
+    <div class="menu-all">
+      <div>
+        <button class="menu"><a href="./main.html">Back to Uni</a></button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="./NUS.html">NUS</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu"><a href="./NTU.html">NTU</a></button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="./HKU.html">HKU</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="./MBTI.html">Interview</a>
+        </button>
+      </div>
+<div>
+        <button class="menu"><a href="/Page/">Home</a></button>
+      </div>
+    </div>
+
+    <style>
+      .uni-pic {
+        width: 500px;
+        transition: 0.5s;
+        opacity: 0.6;
+      }
+      .uni-pic:hover {
+        opacity: 1;
+      }
+
+      .date {
+        width: 700px;
+        height: auto;
+        border: none;
+        background: rgb(72, 67, 61);
+        transition: 0.3s;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        color: #ecdec9;
+      }
+
+      .date:hover {
+        cursor: text;
+        user-select: text;
+        background-color: #ecdec9;
+        color: #3d3232;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-size: 50px;
+        font-style: oblique;
+      }
+
+      p {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      li {
+        font-size: 25px;
+        text-align: justify;
+        line-height: 40px;
+      }
+      h4 {
+        font-size: 25px;
+        text-align: center;
+      }
+      .nav {
+        color: rgb(129, 96, 74);
+      }
+    </style>
+    <h1>Imperial College London</h1>
+    <h1>(2023) BEng Computing</h1>
+    <h4 class="nav">
+      go to:
+      <a href="#iv" class="nav">INTERVIEW</a>
+    </h4>
+    <div class="row">
+      <div class="cards">
+        <button class="date">
+          <h2>UCAS Application</h2>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2>Admissions Test</h2>
+          <p>
+            10 MCQs that test your
+            <strong>math skills</strong>, <strong> logic</strong>, and some
+            <strong>pseudocode</strong>.
+          </p>
+          <p>Tip: Try Beaver questions, olympiad math, and Ted riddles lol.</p>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date" id="iv">
+          <h2>Interview</h2>
+          <p>
+            2 Math questions. 1 about geometry, the other about differentiating
+            x^x.
+          </p>
+          <p>
+            (Literally the night before the interview, I randomly decided to
+            watch a i^i video from blackpenredpen, and it actually somewhat
+            helped me, otherwise I would have no idea to solve the question at
+            all HAHAHA)
+          </p>
+          <p>
+            <strong
+              >Tip for Imperial College London Computing Interview:
+            </strong>
+            <br />Watch 3Blue1Brown and blackpenredpen @YouTube and maybe
+            practice some TMUA/CSAT questions.
+          </p>
+          <p>
+            Also asked about why I chose Computing, and how do I handle stress
+            in academics
+          </p>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2>Conditional Offer!</h2>
+          <p>HAPPY HAPPY HAPPY</p>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

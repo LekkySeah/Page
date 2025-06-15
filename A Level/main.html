@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .h1 {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        color: rgb(227, 204, 183);
+        transition-duration: 0.2s;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        font-size: 60px;
+      }
+
+      .heading {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .heading:hover {
+        cursor: pointer;
+      }
+
+      .img-h1 {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+        transition: 0.3s;
+        opacity: 0.3;
+        lighting-color: #64564d;
+        display: table;
+        color: #64564d;
+      }
+
+      body {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        background-color: #ecdec9;
+        opacity: 0.8;
+        background-image: radial-gradient(#504742 0.65px, transparent 0.65px),
+          radial-gradient(#59514b 0.65px, #ab9c87 0.65px);
+        background-size: 26px 26px;
+        background-position: 0 0, 13px 13px;
+      }
+
+      .menu-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu {
+        display: block;
+        width: 150px;
+        height: 50px;
+        border: none;
+        background-color: #665e58;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+
+      .menu-head {
+        font-size: 30px;
+        color: #ecdec9;
+        font-weight: bold;
+        font-style: italic;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+      }
+
+      .menu:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+
+      /* unvisited link */
+      a:link {
+        color: #c6aaaa;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #b4a37c;
+        text-decoration: none;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: rgb(140, 125, 107);
+      }
+
+      /* selected link */
+      a:active {
+        color: whitesmoke;
+      }
+
+      .intro {
+        text-align: center;
+        color: #3b372f;
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 50px;
+        text-align: center;
+        font-style: oblique;
+        color: #403d3b;
+        margin-bottom: 0;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .cards {
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+
+    <div class="heading">
+      <h1 class="h1">Notes and Tips for A Levels</h1>
+      <div><img src="./van long.jpg" class="img-h1" /></div>
+    </div>
+  </head>
+
+  <body>
+    <div class="menu-all">
+      <div>
+        <button class="menu"><a href="/Page/">Home</a></button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="/Page/Uni/main.html">Uni</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu"><a href="/Page/SPM/main.html">SPM</a></button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="/Page/Music/main.html">Music</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="/Page/MBTI/main.html">MBTI</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu"><a href="/Page/Kat/main.html">Kat</a></button>
+      </div>
+    </div>
+
+    <h2>
+      If you are taking Further Maths, Maths, Chemistry or Physics, I hope this
+      page will be helpful!
+    </h2>
+
+    <p class="intro">
+      So basically, I used Notion to take notes (definitions, questions and
+      answers etc.) and used Microsoft OneNote to draw diagrams and write down
+      formulas.
+    </p>
+    <p class="intro">
+      The cards below are some links to my Notion and Youtube for important
+      notes and formulas.
+    </p>
+    <p class="intro">
+      Note: I used some shortcuts (and maybe a little non-English words) when
+      typing my notes, do reach out to me via
+      <a href="mailto:seahjiayi369@gmail.com">email</a> if you find anything
+      confusing!
+    </p>
+
+    <style>
+      .ach-content {
+        opacity: 0;
+        transition: 0.5s;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        text-align: left;
+        font-size: 25px;
+        visibility: hidden;
+        display: none;
+        color: rgb(194, 178, 163);
+        line-height: 2;
+      }
+
+      .ach:hover .ach-content {
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+        display: inline;
+        color: rgb(194, 178, 163);
+      }
+
+      .ach-title {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-size: 39px;
+        font-weight: bold;
+        font-style: italic;
+        transition: 0.5s;
+        margin: 0 auto;
+        vertical-align: middle;
+        display: inline;
+        color: #ecdec9;
+      }
+
+      .ach:hover .ach-title {
+        display: none;
+        opacity: 0;
+      }
+      .ach {
+        transition: height 0.5s;
+        width: 450px;
+        height: 100px;
+        border: none;
+        background: #403d3b;
+        transition: 0.5s;
+        opacity: 0.6;
+        position: sticky;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .ach:hover {
+        opacity: 1;
+        cursor: pointer;
+        height: 500px;
+      }
+
+      .ach:active {
+        opacity: 1;
+        cursor: pointer;
+        height: 500px;
+      }
+    </style>
+
+    <h3 id="Subjects">Subjects</h3>
+    <div class="row">
+      <div class="cards">
+        <button class="ach">
+          <span class="ach-title">Chemistry</span>
+          <span class="ach-content"
+            ><ul>
+              <li>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLVyD9rOMVdsP4vhI4ky_xLVP3FeVSN9KK"
+                  target="_blank"
+                  >Important Formulae & Equations - YouTube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://meteor-fibula-73e.notion.site/A-Levels-Chemistry-e128599609254eb9bfbec4930575aa57"
+                  target="_blank"
+                  >Chemistry Notion Main Page</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://meteor-fibula-73e.notion.site/Definitions-4c8a473941b446d0a7b544e1c7d64604"
+                  target="_blank"
+                  >Definitions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://meteor-fibula-73e.notion.site/Organic-Mind-Map-A2-5fcca50dde7449fd98b95d28abf37c49"
+                  target="_blank"
+                  >Mind Map - Organic Chemistry</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://meteor-fibula-73e.notion.site/AS-Questions-0160acef690c42c2b1d9f73e5d9401ca"
+                  target="_blank"
+                  >Q&A - AS Level</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://meteor-fibula-73e.notion.site/A2-Questions-4b09cbcd01134b859071993cb07ebc57"
+                  target="_blank"
+                  >Q&A - A2 Level</a
+                >
+              </li>
+            </ul></span
+          >
+        </button>
+      </div>
+      <div class="cards">
+        <button class="ach">
+          <span class="ach-title">Physics</span>
+          <span class="ach-content"
+            ><ul>
+              <li>
+                <a
+                  href="https://meteor-fibula-73e.notion.site/Physics-Definitions-fc5f25a7316e406ab8be500e89759248"
+                  target="_blank"
+                  >Definitions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://meteor-fibula-73e.notion.site/A2-Questions-da731fff51a74fc9ba7ef5224efdf71c"
+                  target="_blank"
+                  >Q & A - A2 Level</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=a-ZHk3YLens"
+                  target="_blank"
+                  >𝐀𝐬𝐭𝐫𝐨𝐧𝐨𝐦𝐲 & 𝐂𝐨𝐬𝐦𝐨𝐥𝐨𝐠𝐲 - YouTube</a
+                >
+              </li>
+            </ul></span
+          >
+        </button>
+      </div>
+
+      <div class="cards">
+        <button id="CCA" class="ach">
+          <span class="ach-title">Further Maths</span>
+          <span class="ach-content"
+            ><ul>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=eCojQ_7R6Dc"
+                  target="_blank"
+                  >Important Equations - Further Pure Maths 2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/11w8cC6JqCSDOp-Sd8dWVI2NSlFSnjz1u/view?usp=sharing"
+                  target="_blank"
+                  >Notes - Further Mechanics</a
+                >
+              </li>
+            </ul></span
+          >
+        </button>
+      </div>
+
+      <div class="cards">
+        <button id="Achievements" class="ach">
+          <span class="ach-title">Maths</span>
+          <span class="ach-content"
+            ><ul>
+              <li>coming soon...</li>
+            </ul></span
+          >
+        </button>
+      </div>
+    </div>
+
+    <style>
+      .tips-content {
+        opacity: 0;
+        transition: 0.5s;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        text-align: left;
+        font-size: 25px;
+        visibility: hidden;
+        display: none;
+        color: rgb(68, 62, 57);
+        line-height: 2;
+      }
+
+      .tips:hover .tips-content {
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+        display: inline;
+      }
+
+      .tips-title {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-size: 39px;
+        font-weight: bold;
+        font-style: italic;
+        transition: 0.5s;
+        margin: 0 auto;
+        vertical-align: middle;
+        display: inline;
+        color: #58534c;
+      }
+
+      .tips:hover .tips-title {
+        display: none;
+        opacity: 0;
+      }
+      .tips {
+        transition: height 0.5s;
+        width: 450px;
+        height: 100px;
+        border: none;
+        background: #beb6b0;
+        transition: 0.5s;
+        opacity: 0.6;
+        position: sticky;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .tips:hover {
+        opacity: 1;
+        cursor: pointer;
+        height: 600px;
+      }
+
+      .tips:active {
+        opacity: 1;
+        cursor: pointer;
+        height: 650px;
+      }
+    </style>
+    <h3 id="Subjects"><strong>Study Tips for A Levels</strong></h3>
+
+    <div class="row">
+      <div class="cards">
+        <button id="education" class="tips">
+          <span class="tips-title">Practice, Practice, Practice!!!</span>
+          <span class="tips-content">Do as many PYQs as you can!!!</span>
+        </button>
+      </div>
+
+      <div class="cards">
+        <button id="education" class="tips">
+          <span class="tips-title">Wrong Answer Notebook</span>
+          <span class="tips-content"
+            ><ol>
+              <li>
+                Use a "Wrong Answer Notebook" to record every question you got
+                wrong.
+              </li>
+              <li>
+                Understand why you are wrong (Eg: you missed the negative sign,
+                insufficient s.f.) and copy down the right answers.
+              </li>
+              <li>
+                Categorize the questions by chapter so that you will know your
+                weakest chapter.
+              </li>
+              <li>Focus on revising your weakest chapters before the exam.</li>
+            </ol></span
+          >
+        </button>
+      </div>
+      <div class="cards">
+        <button id="education" class="tips">
+          <span class="tips-title">All Possible Mistakes</span>
+          <span class="tips-content"
+            ><ol>
+              <li>
+                From your Wrong Answer Notebook, make a list of all possible
+                mistakes that you might make. (especially the careless ones!!!)
+              </li>
+              <li>
+                Remind yourself not to repeat them before sitting for the paper.
+              </li>
+            </ol></span
+          >
+        </button>
+      </div>
+      <div class="cards">
+        <button id="education" class="tips">
+          <span class="tips-title">All Possible Questions</span>
+          <span class="tips-content"
+            ><ol>
+              <li>
+                Make a list of all possible questions that will be asked (the
+                descriptive ones!!)
+              </li>
+              <li>
+                You can check out my Notion, there are 20+ possible questions
+                with answers (However, don't try to memorize everything without
+                understanding first).
+              </li>
+            </ol></span
+          >
+        </button>
+      </div>
+    </div>
+
+    <h3>Study with Me & Dark Academia Ambience</h3>
+    <div class="row">
+      <div class="cards">
+        <iframe
+          class="study"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Y4WqIUXmfP8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="cards">
+        <iframe
+          class="study"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/WkLMjerKWyU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <h3>Good luck and start your hard work RIGHT NOW!</h3>
+
+    <p><a href="#">Jump to Top</a></p>
+  </body>
+</html>

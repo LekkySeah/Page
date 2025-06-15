@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jia Yi's Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .h1 {
+        font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;;
+        color: rgb(227, 204, 183);
+        transition-duration: 0.2s;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        font-size: 60px;
+      }
+
+      .heading {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .heading:hover {
+        cursor: pointer;
+      }
+
+      .img-h1 {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+        transition: 0.3s;
+        opacity: 0.3;
+        lighting-color: #64564d;
+        display: table;
+        color: #64564d;
+      }
+
+      .menu-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        justify-content: center;
+      }
+
+      .menu-all {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100vh;
+        background-image: radial-gradient(#c5b2a6 0.65px, transparent 0.65px),
+          radial-gradient(#c5b4a9 0.65px, #5b5347 0.65px);
+        background-size: 26px 26px;
+        background-position: 0 0, 13px 13px;
+      }
+      .menu {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2px;
+        width: 350px;
+        height: 50px;
+        border: none;
+        background-color: #c5b4a9;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+
+      .menu-head {
+        font-size: 30px;
+        color: #ecdec9;
+        font-weight: bold;
+        font-style: italic;
+        width: 350px;
+        height: 50px;
+        text-align: center;
+      }
+
+      .menu:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+
+      .pfp-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        padding: 0 50px;
+        position: relative;
+      }
+      .pfp {
+        width: 330px;
+        height: auto;
+        object-fit: contain;
+        transition: 0.3s;
+        margin-bottom: 50px;
+      }
+
+      .pfp:hover {
+        opacity: 0.8;
+      }
+
+      .left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+      }
+      .right {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+      }
+
+      body {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        background-color: #ecdec9;
+        opacity: 0.8;
+        background-image: radial-gradient(#c5b2a6 0.65px, transparent 0.65px),
+          radial-gradient(#c5b4a9 0.65px, #5b5347 0.65px);
+        background-size: 26px 26px;
+        background-position: 0 0, 13px 13px;
+      }
+
+      .link-img {
+        height: 20px;
+        width: 20px;
+        object-fit: cover;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+
+      /* unvisited link */
+      a:link {
+        color: #3d3232;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #3d3232;
+        text-decoration: none;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: rgb(140, 125, 107);
+      }
+
+      /* selected link */
+      a:active {
+        color: whitesmoke;
+      }
+
+      h3 {
+        margin-top: 50px;
+        color: #c5b4a9;
+        font-weight: lighter;
+        margin-left: 30px;
+        font-size: 25px;
+      }
+
+      p {
+        text-align: center;
+        color: #3b372f;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .cards {
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+      }
+
+      em {
+        font-weight: bold;
+        font-size: 25px;
+      }
+    </style>
+
+    <style>
+      .me {
+        width: 300px;
+        height: 300px;
+        border: none;
+        background: rgb(183, 170, 155);
+        transition: 0.5s;
+        opacity: 0.6;
+        position: sticky;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .me:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .me-content {
+        opacity: 0;
+        transition: 0.5s;
+        font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;;
+        text-align: left;
+        font-size: 20px;
+        visibility: hidden;
+        display: none;
+        color: rgb(61, 55, 49);
+        line-height: 2;
+      }
+
+      .me:hover .me-content {
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+        display: inline;
+      }
+
+      .me-title {
+        font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;;
+        color: rgb(61, 55, 49);
+        font-size: 39px;
+        font-weight: bold;
+        font-style: italic;
+        transition: 0.5s;
+        height: 300px;
+        vertical-align: middle;
+        display: inline;
+      }
+
+      .me:hover .me-title {
+        display: none;
+        opacity: 0;
+      }
+    </style>
+    <div class="heading">
+      <h1 class="h1">Jia Yi's Personal Page</h1>
+      <div><img src="./img/journal.jpg" class="img-h1" /></div>
+    </div>
+  </head>
+  <body>
+    <h3>
+      Incoming CS student discovering HTML and CSS be like:
+    </h3>
+    <div class="row">
+      <div class="cards">
+        <button class="me">
+          <span class="me-title">About Me:</span>
+          <span class="me-content">
+            <ul>
+              <li><a href="#education">My Education</a></li>
+              <li><a href="#volunteer">Volunteering Experiences</a></li>
+              <li><a href="#CCA">CCA Involvements</a></li>
+              <li><a href="#Achievements">Recent Achievements</a></li>
+            </ul>
+          </span>
+        </button>
+      </div>
+      <div class="cards">
+        <div class="menu-all">
+          <div class="pfp-container">
+            <img src="./img/van.jpg" class="pfp" />
+            <div class="menu-container">
+             <!-- <div><p class="menu-head">Navigation</p></div> -->
+              <div>
+                <button class="menu">
+                  <a href="./Uni/main.html">Uni</a>
+                </button>
+              </div>
+              <div>
+                <button class="menu">
+                  <a href="./A Level/main.html">A Levels</a>
+                </button>
+              </div>
+              <div>
+                <button class="menu"><a href="./SPM/main.html">SPM</a></button>
+              </div>
+              <div>
+                <button class="menu">
+                  <a href="./Music/main.html">Music</a>
+                </button>
+              </div>
+              <div>
+                <button class="menu">
+                  <a href="./MBTI/main.html">MBTI</a>
+                </button>
+              </div>
+              <div>
+                <button class="menu"><a href="./Kat/main.html">Kat</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <button class="me">
+          <span class="me-title">Contact Me!</span>
+          <span class="me-content"
+            ><ul>
+              <li>
+                <a href="mailto:seahjiayi369@gmail.com" class="link"
+                  ><img
+                    src="./img/Gmail-logo.png"
+                    class="link-img"
+                  />seahjiayi369@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/jiajia_999999999/"
+                  target="_blank"
+                  class="link"
+                  ><img
+                    src="./img/ig.png"
+                    class="link-img"
+                  />@jiajia_999999999</a
+                >
+              </li>
+              <li>
+                <a href="https://www.xiaohongshu.com/user/profile/63e5f4e4000000002702a8b7?xhsshare=CopyLink&appuid=63e5f4e4000000002702a8b7&apptime=1704876148"
+                  target="_blank"
+                  class="link">My xiao hong shu</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@Gallium_Dark_Academia"
+                  target="_blank"
+                  class="link"
+                  ><img src="./img/yt.png" class="link-img" />My Music!</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@galliumjournals9073"
+                  target="_blank"
+                  class="link"
+                  ><img src="./img/yt.png" class="link-img" />Academics-related
+                  stuff here!</a
+                >
+              </li>
+            </ul></span
+          >
+        </button>
+      </div>
+    </div>
+    <style>
+      .ed-content {
+        opacity: 0;
+        transition: 0.5s;
+        font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;;
+        text-align: left;
+        font-size: 20px;
+        visibility: hidden;
+        display: none;
+        color: rgb(61, 55, 49);
+        line-height: 2;
+        padding: auto;
+      }
+
+      .ed:hover .ed-content {
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+        display: inline;
+      }
+
+      .ed-title {
+        font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;;
+        font-size: 39px;
+        font-weight: bold;
+        font-style: italic;
+        transition: 0.5s;
+        margin: 0 auto;
+        vertical-align: middle;
+        display: inline;
+        color: rgb(61, 55, 49);
+      }
+
+      .ed:hover .ed-title {
+        display: none;
+        opacity: 0;
+      }
+      .ed {
+        transition: height 0.5s;
+        width: 450px;
+        height: 100px;
+        border: none;
+        background: rgb(183, 170, 155);
+        transition: 0.5s;
+        opacity: 0.6;
+        position: sticky;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .ed:hover {
+        opacity: 1;
+        cursor: pointer;
+        height: 400px;
+      }
+    </style>
+    <div class="row">
+      <div class="cards">
+        <button id="education" class="ed">
+          <span class="ed-title">My Education</span>
+          <span class="ed-content"
+            ><ul>
+              <li>
+                <em>2021-2022: Sunway College (A Levels)</em> <br /><strong
+                  >Subjects:</strong
+                >
+                Mathematics, Further Mathematics, Physics, Chemistry <br />
+                <strong>Results:</strong> 4A*
+              </li>
+              <li>
+                <em>2016-2021: Phor Tay High School (SPM)</em> <br />
+                <strong>Results: </strong>10A+ 1A
+              </li>
+            </ul></span
+          >
+        </button>
+      </div>
+      <div class="cards">
+        <button id="volunteer" class="ed">
+          <span class="ed-title">Volunteering Experiences</span>
+          <span class="ed-content"
+            ><ul>
+              <li>Tutors in Action: SPM Add Maths Tutor</li>
+              <li>Project Didik SPM: Maths Tutor</li>
+              <li>Olympiad Maths Team Tutor</li>
+            </ul>
+            <p>Active in:</p>
+            <p></p>
+            <ul>
+              <li>Sunway Student Volunteers</li>
+              <li>A-Level Student Ambassadors & Community Service</li>
+            </ul></span
+          >
+        </button>
+      </div>
+
+      <div class="cards">
+        <button id="CCA" class="ed">
+          <span class="ed-title">CCA Involvements</span>
+          <span class="ed-content"
+            ><ul>
+              <li>Olympiad Mathematics Club (President)</li>
+              <li>STEM Club (Secretary)</li>
+              <li>Bulletin Board (Editor)</li>
+              <li>Magazine Unit (Treasurer)</li>
+              <li>Young Enterprise (Production Manager)</li>
+              <li>Prefect Board (Prefect)</li>
+            </ul></span
+          >
+        </button>
+      </div>
+    </div>
+
+    <style>
+      .ach-content {
+        opacity: 0;
+        transition: 0.5s;
+        font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;;
+        text-align: left;
+        font-size: 20px;
+        visibility: hidden;
+        display: none;
+        color: rgb(194, 178, 163);
+        line-height: 2;
+      }
+
+      .ach:hover .ach-content {
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+        display: inline;
+        color: rgb(194, 178, 163);
+      }
+
+      .ach-title {
+        font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;;
+        font-size: 39px;
+        font-weight: bold;
+        font-style: italic;
+        transition: 0.5s;
+        margin: 0 auto;
+        vertical-align: middle;
+        display: inline;
+        color: #ecdec9;
+      }
+
+      .ach:hover .ach-title {
+        display: none;
+        opacity: 0;
+      }
+      .ach {
+        transition: height 0.5s;
+        width: 450px;
+        height: 100px;
+        border: none;
+        background: #403d3b;
+        transition: 0.5s;
+        opacity: 0.6;
+        position: sticky;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .ach:hover {
+        opacity: 1;
+        cursor: pointer;
+        height: 550px;
+      }
+
+      .ach:active {
+        opacity: 1;
+        cursor: pointer;
+        height: 500px;
+      }
+    </style>
+    <h2 id="Achievements">Recent Achievements</h2>
+    <div class="row">
+      <div class="cards">
+        <button class="ach">
+          <span class="ach-title">Olympiad</span>
+          <span class="ach-content"
+            ><ul>
+              <li>Asia Pacific Linguistics Olympiad: Bronze Medal (2022)</li>
+              <li>
+                Malaysian Computational Linguistics Olympiad: Gold Medal (2022)
+              </li>
+              <li>
+                International Math Olympiad National Selection Test: Honorable
+                Mention (2022)
+              </li>
+              <li>
+                Singapore and Asian Schools Math Olympiad: Silver Award (2022)
+              </li>
+              <li>Kangaroo Math Competition: Silver Award (2022)</li>
+            </ul></span
+          >
+        </button>
+      </div>
+      <div class="cards">
+        <button class="ach">
+          <span class="ach-title">STEM</span>
+          <span class="ach-content"
+            ><ul>
+              <li>
+                STEM Ideation Competition using AR on iPad: Gold Award (2020)
+              </li>
+              <li>
+                Penang International Science Fair Student-led Workshop: 2nd
+                Place (2019)
+              </li>
+              <li>Young Innovators Challenge: Silver Medal (2019)</li>
+              <li>
+                Mathematics Quiz for Secondary Schools: 5th Place (Group
+                Category)(2018)
+              </li>
+            </ul></span
+          >
+        </button>
+      </div>
+
+      <div class="cards">
+        <button id="CCA" class="ach">
+          <span class="ach-title">Public Speaking/Debate</span>
+          <span class="ach-content"
+            ><ul>
+              <li>
+                Malaysian Nationals Intervarsity Debate Championship: Top 26
+                Novice Speakers (2021)
+              </li>
+              <li>
+                Malaysia Oratory Games - Presidential Debate: Grand Finalist
+                (2019)
+              </li>
+              <li>
+                School Level English Elocution Competition: Champion (2019)
+              </li>
+              <li>
+                The World Scholar's Cup Global Round: Tournament of Champions
+                Qualifier (2018)
+              </li>
+            </ul></span
+          >
+        </button>
+      </div>
+
+      <div class="cards">
+        <button id="Achievements" class="ach">
+          <span class="ach-title">Music</span>
+          <span class="ach-content"
+            ><ul>
+              <li>
+                Diploma in Piano Recital (LTCL) Trinity College London:
+                Distinction (2020)
+              </li>
+              <li>Composer of High School Graduation Song (2020)</li>
+              <li>Diploma ABRSM In Cello Performance (2019)</li>
+              <li>ABRSM High Scorer's Competition: 3rd Place (2019)</li>
+              <li>
+                Huazong International Music Art Championship Red Sonata Fiesta:
+                Gold With Honour (2018)
+              </li>
+              <li>Musica Sinfonietta Orchestra (Cellist) (2012-Present)</li>
+            </ul></span
+          >
+        </button>
+      </div>
+    </div>
+
+    <p><a href="#">Jump to Top</a></p>
+  </body>
+</html>

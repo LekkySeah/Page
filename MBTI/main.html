@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .h1 {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        color: rgb(227, 204, 183);
+        transition-duration: 0.2s;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        font-size: 60px;
+      }
+
+      .heading {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .heading:hover {
+        cursor: pointer;
+      }
+
+      .img-h1 {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+        transition: 0.3s;
+        opacity: 0.3;
+        lighting-color: #64564d;
+        display: table;
+        color: #64564d;
+      }
+
+      body {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        background-color: #ecdec9;
+        opacity: 0.8;
+        background-image: radial-gradient(#504742 0.65px, transparent 0.65px),
+          radial-gradient(#59514b 0.65px, #ab9c87 0.65px);
+        background-size: 26px 26px;
+        background-position: 0 0, 13px 13px;
+      }
+      /* unvisited link */
+      a:link {
+        color: #555246;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #534e44;
+        text-decoration: none;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: rgb(137, 91, 81);
+      }
+
+      /* selected link */
+      a:active {
+        color: whitesmoke;
+      }
+      .menu-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu {
+        display: block;
+        width: 150px;
+        height: 50px;
+        border: none;
+        background-color: #c5b4a9;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+
+      .menu-head {
+        font-size: 30px;
+        color: #ecdec9;
+        font-weight: bold;
+        font-style: italic;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+      }
+
+      .menu:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+
+      .thumbnail {
+        width: 390px;
+        margin-left: 80px;
+        border-radius: 30px;
+        margin-bottom: 50px;
+        align-content: center;
+      }
+
+      .thumbnail:hover {
+        opacity: 0.7;
+      }
+      h2 {
+        font-style: oblique;
+        font-size: 50px;
+        text-align: center;
+      }
+    </style>
+
+    <div class="heading">
+      <h1 class="h1">MBTI</h1>
+      <div><img src="./van long.jpg" class="img-h1" /></div>
+    </div>
+  </head>
+
+  <body>
+    <div class="menu-all">
+      <div>
+        <button class="menu"><a href="/Page/">Home</a></button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="/Page/Uni/main.html">Uni</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="/Page/A Level/main.html">A Levels</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu"><a href="/Page/SPM/main.html">SPM</a></button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="/Page/Music/main.html">Music</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="/Page/Kat/main.html">Kat</a>
+        </button>
+      </div>
+    </div>
+
+    <style>
+      .ed-content {
+        opacity: 0;
+        transition: 0.5s;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        text-align: left;
+        font-size: 25px;
+        visibility: hidden;
+        display: none;
+        color: rgb(61, 55, 49);
+        line-height: 2;
+        padding: auto;
+      }
+
+      .ed:hover .ed-content {
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+        display: inline;
+      }
+
+      .ed-title {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-size: 39px;
+        font-weight: bold;
+        font-style: italic;
+        transition: 0.5s;
+        margin: 0 auto;
+        vertical-align: middle;
+        display: inline;
+      }
+
+      .ed:hover .ed-title {
+        display: none;
+        opacity: 0;
+      }
+      .ed {
+        transition: height 0.5s;
+        width: 390px;
+        height: 100px;
+        border: none;
+        background: rgb(183, 170, 155);
+        transition: 0.5s;
+        opacity: 0.6;
+        position: sticky;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .ed:hover {
+        opacity: 1;
+        cursor: pointer;
+        height: 390px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .cards {
+        flex: 1;
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+
+    <!--<div class="row">
+    <div class="cards">
+      <button id="education" class="ed">
+        <span class="ed-title">The MBTI Rabbit Hole</span>
+        <span class="ed-content"
+          ><a href="Rabbit Hole.html"
+            >Read more about me slowly spiralling into an existential crisis as
+            I read further into the 8 cognitive functions...</a
+          ></span
+        >
+      </button>
+    </div>
+
+    <div class="cards">
+      <button id="volunteer" class="ed">
+        <span class="ed-title">Character(s) Analysis</span>
+        <span class="ed-content"
+          ><a href="Character.html"
+            >An analysis about some interesting characters/people</a
+          ></span
+        >
+      </button>
+    </div>
+  </div>
+  -->
+
+    <h2>MBTI Playlists to study to (click on the pics!)</h2>
+    <div class="row">
+      <div class="cards">
+        <a href="https://www.youtube.com/watch?v=WD-pRu35KOU" target="_blank"
+          ><img src="intp.jpg" class="thumbnail"
+        /></a>
+      </div>
+      <div class="cards">
+        <a href="https://www.youtube.com/watch?v=pkJQjr6H6-s&t" target="_blank"
+          ><img src="intj.JPG" class="thumbnail"
+        /></a>
+      </div>
+      <div class="cards">
+        <a href="https://www.youtube.com/watch?v=r86E6N7qSe4&t" target="_blank"
+          ><img src="infj.webp" class="thumbnail"
+        /></a>
+      </div>
+    </div>
+
+    <h2>MBTI skit(s) lol</h2>
+    <a href="https://www.youtube.com/watch?v=yLVEXhsULAU" target="_blank"
+      ><img src="intp meme.jpg" class="thumbnail"
+    /></a>
+  </body>
+</html>

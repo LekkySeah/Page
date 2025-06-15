@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .h1 {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        color: rgb(227, 204, 183);
+        transition-duration: 0.2s;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        font-size: 60px;
+      }
+
+      .heading {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .heading:hover {
+        cursor: pointer;
+      }
+
+      .img-h1 {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+        transition: 0.3s;
+        opacity: 0.3;
+        lighting-color: #64564d;
+        display: table;
+        color: #64564d;
+      }
+
+      body {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        background-color: #ecdec9;
+        opacity: 0.8;
+        background-image: radial-gradient(#504742 0.65px, transparent 0.65px),
+          radial-gradient(#59514b 0.65px, #ab9c87 0.65px);
+        background-size: 26px 26px;
+        background-position: 0 0, 13px 13px;
+      }
+
+      .menu-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu {
+        display: block;
+        width: 100px;
+        height: 50px;
+        border: none;
+        background-color: #c5b4a9;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+
+      .menu-head {
+        font-size: 30px;
+        color: #ecdec9;
+        font-weight: bold;
+        font-style: italic;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+      }
+
+      .menu:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+
+      /* unvisited link */
+      a:link {
+        color: #3d3232;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #3d3232;
+        text-decoration: none;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: rgb(140, 125, 107);
+      }
+
+      /* selected link */
+      a:active {
+        color: whitesmoke;
+      }
+
+      h1 {
+        text-align: center;
+        color: #3d3232;
+        font-style: italic;
+        font-size: 50px;
+      }
+
+      img {
+        width: 500px;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .cards {
+        flex: 1;
+        margin: 50px;
+        text-align: center;
+      }
+    </style>
+
+    <div class="heading">
+      <div><img src="./van long.jpg" class="img-h1" /></div>
+      <div><h1 class="h1">MBTI in Interview</h1></div>
+    </div>
+  </head>
+  <body>
+    <div class="menu-all">
+      <div>
+        <button class="menu"><a href="./main.html">Back to Uni</a></button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="./NUS.html">NUS</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu"><a href="./Imperial.html">Imperial</a></button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="./NTU.html">NTU</a>
+        </button>
+      </div>
+      <div>
+        <button class="menu">
+          <a href="./HKU.html">HKU</a>
+        </button>
+      </div>
+     <div>
+        <button class="menu"><a href="/Page/">Home</a></button>
+      </div>
+    </div>
+
+    <style>
+      .uni-pic {
+        width: 500px;
+        transition: 0.5s;
+        opacity: 0.6;
+      }
+      .uni-pic:hover {
+        opacity: 1;
+      }
+
+      .date {
+        width: 450px;
+        height: auto;
+        border: none;
+        background: rgb(72, 67, 61);
+        transition: 0.3s;
+        margin-top: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        color: #ecdec9;
+      }
+
+      .date:hover {
+        cursor: text;
+        user-select: text;
+        opacity: 1;
+        background-color: #ecdec9;
+        color: #3d3232;
+      }
+
+      h2,
+      h3 {
+        font-size: 50px;
+        font-style: oblique;
+        text-align: center;
+      }
+
+      p {
+        font-size: 25px;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      li {
+        font-size: 25px;
+        text-align: justify;
+        line-height: 40px;
+      }
+      h4 {
+        font-size: 25px;
+        text-align: center;
+      }
+      .nav {
+        color: rgb(129, 96, 74);
+      }
+
+      em {
+        color: rgb(224, 119, 140);
+        font-weight: 600;
+      }
+    </style>
+    <h1>Use MBTI to Prepare Your Interview</h1>
+    <p>No, I'm not talking about the 4-letter types (ENTJ, ISFP…)</p>
+
+    <p>So what are scholarships looking for?</p>
+    <p>
+      Well-rounded candidates who possess soft skills such as leadership,
+      communication, and teamwork; skills relevant to their field such as
+      logical problem solving, and creativity, as well as excel in academics.
+      A.K.A. People who are well developed in using all of the 8 cognitive
+      functions (Te, Ti, Ne, Ni, Se, Si, Fe, Fi).
+    </p>
+    <p>
+      The 8 cognitive functions will be a useful tool to prepare for your
+      interview.
+    </p>
+    <p>
+      Myth: you need to be an ENTJ/Te-dom girl boss (or boy boss) to obtain a
+      scholarship.
+    </p>
+    <p>
+      Truth: Anyone has the chance to be a scholar. However, you need to show
+      that you are well-balanced in using every 8 cognitive functions.
+    </p>
+    <p>
+      Before going into depth, make sure you understand what the 8 cognitive
+      functions are (watch Frank James on YouTube)
+    </p>
+
+    <h2>Interview Questions about each Function</h2>
+    <div class="row">
+      <div class="cards">
+        <button class="date">
+          <h2 id="app">Ni</h2>
+          <ul>
+            <li>Career plan?</li>
+            <li>Study plan?</li>
+            <li>What do you think you will achieve in future?</li>
+            <li>How will you contribute to our uni?</li>
+            <li>What will you do if you are rejected?</li>
+          </ul>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2 id="app">Ne</h2>
+          <ul>
+            <li>What co-curricular activities do you want to join in uni?</li>
+            <li>What do you think might be the biggest challenge in uni?</li>
+          </ul>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2 id="app">Ti</h2>
+          <ul>
+            <li>Fav subject?</li>
+            <li>
+              What academic areas can you improve? (a.k.a. your weakest subject)
+            </li>
+            <li>Why do you want to study [your degree]?</li>
+            <li>Give me a fun fact about [your field of study].</li>
+            <li>Which is your fav topic of [your field of study]? Why?</li>
+            <li>What is the trend of [your field of study]?</li>
+            <li>
+              What readings (book, news) have you done about [your field of
+              study]?
+            </li>
+            <li>What type of leader are you?</li>
+            <li>How familiar are you with [your field of study]?</li>
+          </ul>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2 id="app">Te</h2>
+          <ul>
+            <li>Academic achievement?</li>
+            <li>Non-academic achievement?</li>
+            <li>What type of leader are you?</li>
+            <li>How do you balance time?</li>
+            <li>what does success mean to u?</li>
+            <li>How do you define failure?</li>
+            <li>Are your grades a good indication of your ability?</li>
+            <li>
+              Why is [your field of study] important/applicable in real life?
+            </li>
+          </ul>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2 id="app">Fi</h2>
+          <ul>
+            <li>Fav Book/Movie?</li>
+            <li>
+              Who is your role model? / Why do you want to be a [your career]?
+              Who inspired you?
+            </li>
+            <li>
+              What motivates you?/ what r u passionate about/ what inspires
+              you/What drives u to do your best?
+            </li>
+            <li>What makes you different from the other candidates?</li>
+            <li>What are your hobbies?</li>
+            <li>Who are you in school/How would you describe yourself?</li>
+            <li>What are your strengths/weaknesses?</li>
+            <li>Rate yourself.</li>
+          </ul>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2 id="app">Fe</h2>
+          <ul>
+            <li>What will you do if you meet bad teammates/roommates?</li>
+            <li>Volunteering experiences?</li>
+          </ul>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2 id="app">Si</h2>
+          <ul>
+            <li>What did you learn from high school?</li>
+            <li>
+              Give me an example of how you handle stress/overcome a challenge.
+            </li>
+            <li>Tell me about a mistake you made.</li>
+            <li>
+              Tell me about when you failed to do something and succeeded in the
+              end.
+            </li>
+          </ul>
+        </button>
+      </div>
+      <div class="cards">
+        <button class="date">
+          <h2 id="app">Se</h2>
+          <ul>
+            <li>How you adapt to a new environment?</li>
+            <li>How would you describe a good uni environment?</li>
+            <li>
+              What is the greatest challenge faced by you now? How do you plan
+              to overcome it?
+            </li>
+            <li>Why do you want to come to [country]?</li>
+            <li>
+              What have you been doing lately? (for people with a study gap)
+            </li>
+          </ul>
+        </button>
+      </div>
+    </div>
+
+    <p>
+      I think that's about it. Listen to my
+      <a
+        href="https://www.youtube.com/playlist?list=PLa9RtCMtwVkScdsvRjroU5FG19SBeOjRY"
+        target="_blank"
+        >dark academia study playlists</a
+      >
+      for good luck.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .h1 {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        color: rgb(82, 72, 62);
+        transition-duration: 0.2s;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        font-size: 60px;
+      }
+
+      .heading {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .heading:hover {
+        cursor: pointer;
+      }
+
+      .img-h1 {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+        transition: 0.3s;
+        opacity: 0.3;
+        lighting-color: #64564d;
+        display: table;
+        color: #64564d;
+      }
+
+      body {
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        background-color: #ecdec9;
+        opacity: 0.8;
+        background-image: radial-gradient(#504742 0.65px, transparent 0.65px),
+          radial-gradient(#59514b 0.65px, #ab9c87 0.65px);
+        background-size: 26px 26px;
+        background-position: 0 0, 13px 13px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 25px;
+        margin-right:100px;
+        margin-left:100px;
+      }
+
+      h2 {
+        color: #4c4540;
+        font-weight: 800;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      /* unvisited link */
+      a:link {
+        color: #3d3232;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #3d3232;
+        text-decoration: none;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: rgb(140, 125, 107);
+      }
+
+      /* selected link */
+      a:active {
+        color: whitesmoke;
+      }
+
+     /* .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .left,
+      .right {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 25%;
+        align-items: center;
+      }
+
+      img {
+        width: 250px;
+      }
+      .side-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .mid {
+        flex-basis: 50%;
+        text-align: left;
+      }
+      */
+
+      .menu-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .menu {
+        display: block;
+        width: 150px;
+        height: 50px;
+        border: none;
+        background-color: #c5b4a9;
+        font-family: Perpetua, Baskerville, Big Caslon, Palatino Linotype,
+          Palatino, URW Palladio L, Nimbus Roman No9 L, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        opacity: 0.5;
+        transition: 0.2s;
+      }
+
+      .menu-head {
+        font-size: 30px;
+        color: #ecdec9;
+        font-weight: bold;
+        font-style: italic;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+      }
+
+      .menu:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+            .down-img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .down {
+        max-width: 25%;
+        height: auto;
+      }
+    </style>
+
+    <div class="heading">
+      <h1 class="h1">Cat</h1>
+      <div><img src="./cat/cat 4.jpg" class="img-h1" /></div>
+    </div>
+  </head>
+
+  <body>
+    <!--    <div class="left">
+        <div class="side-img">
+          <img src="./cat/1.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/3.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/5.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/7.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/9.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/11.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/13.jpeg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/15.jpg" />
+        </div>
+      </div>
+    -->
+      <div class="mid">
+        <h2>A Collection of cat pics (and stories)</h2>
+        <div class="menu-all">
+          <div>
+            <button class="menu">
+              <a href="/Page/">Home</a>
+            </button>
+          </div>
+          <div>
+            <button class="menu">
+              <a href="/Page/Uni/main.html">Uni</a>
+            </button>
+          </div>
+          <div>
+            <button class="menu">
+              <a href="/Page/A Level/main.html">A Levels</a>
+            </button>
+          </div>
+          <div>
+            <button class="menu">
+              <a href="/Page/SPM/main.html">SPM</a>
+            </button>
+          </div>
+          <div>
+            <button class="menu">
+              <a href="/Page/Music/main.html">Music</a>
+            </button>
+          </div>
+          <div>
+            <button class="menu">
+              <a href="/Page/MBTI/main.html">MBTI</a>
+            </button>
+          </div>
+        </div>
+
+        <h2>Cat Living Rent Free in the School</h2>
+        <p>
+          This is the story of our school cat, Queen and an abandoned kitten.
+        </p>
+
+        <p>
+          Queen lived in our school for nearly a year, and that day while we
+          were entertaining her, we noticed that in a dark, dark room that
+          people no longer use, there was a soft meow. And the room was supposed
+          to be locked all the time. But when we tried to enter the room, the
+          room was surprisingly open. We went in and found a little, newborn
+          kitten. It seemed scared and hungry. It hissed at us (spicy monster
+          shiver me timbers) and only quieted down later when we brought it some
+          food and water.
+        </p>
+        <div class="down-img">
+          <img src="./cat/1.jpg" class="down" />
+          <img src="./cat/2.jpg" class="down" />
+          <img src="./cat/3.jpg" class="down" />
+          <img src="./cat/4.jpg" class="down" />
+        </div>
+        <p>
+          Queen then went in, they were not friendly to each other at first, but
+          later on, they got along well. When Queen went out of the room, the
+          kitten followed her timidly. The kitten was rather excited to see the
+          light. There was a staircase nearby, and Queen went up the stairs. The
+          kitten stumbled up and fell. After a few practices, the little kitten
+          managed to jump up and down freely.
+        </p>
+        <p>
+          It was cute to see the two of them cuddling together sleeping. They
+          were not bound by blood, but they look like a family. Maybe it was
+          because that Queen gave birth to a bunch of kids twice, but she lost
+          all of her kids :( (like literally lost, no one knows where did they
+          go). Queen treated the little kitten as her own daughter. They lived
+          in the dark together, and we went to see them frequently.
+        </p>
+        <div class="down-img">
+          <img src="./cat/5.jpg" class="down" />
+          <img src="./cat/6.jpg" class="down" />
+          <img src="./cat/7.jpg" class="down" />
+          <img src="./cat/8.jpg" class="down" />
+        </div>
+        <p>
+          After a few days, when we went back to the same place, Queen meowed at
+          us in an anxious tone. We looked around and heard meows from below.
+          The kitten fell off the 2-metre-high staircase! We wanted to pick it
+          up but the stairs were locked, and we could not get in. Queen pushed
+          us gently towards the stairs, hoping that we could help to save the
+          poor kitten. One of us sought help from a school worker to unlock the
+          stairs to save the poor kitten. The kitten was not hurt, but it was
+          frightened. We finally realised that this kitten could no longer stay
+          here safely, as she might face the same fate as Queen's babies.
+        </p>
+
+        <p>
+          We decided to take the 2 of them to the vet for a check-up. We kept
+          them in a box as if we were smuggling stuff lol, and of course, they
+          struggled to escape like crazy, and we ran like crazy people on the
+          streets to head to the vet.
+        </p>
+        <div class="down-img">
+          <img src="./cat/9.jpg" class="down" />
+          <img src="./cat/10.jpg" class="down" />
+          <img src="./cat/11.jpg" class="down" />
+          <img src="./cat/12.jpg" class="down" />
+        </div>
+        <p>
+          The vet asked us their names, but we could not answer. The kitty's
+          ain't got a name yet! (Queen did not have a name too at that time, we
+          just called her pspsps lol)
+        </p>
+        <p>
+          We took the cats to a comfortable cat's bnb to chill for a little
+          while, as our senior worked there as a part-timer. There were other
+          cats around, and our Queen who was once a stray cat suddenly turned
+          feral and fought with the cats there. So, we kept poor Queen in the
+          box (jail time) to calm her down. We were thinking very hard about how
+          to keep this poor little kitten.
+        </p>
+
+        <p>
+          Our senior advised us to consider it seriously. if we send it to
+          [insert animal protection centre name here], it might get bullied by
+          the other stray cats there. Maybe we could let it stay here for a
+          short while? But exactly how long is a short while? What if nobody
+          wants to keep it? Unfortunately, our parents would kill us if we take
+          a stray kitten out of nowhere home. We thought of a lot of ways, but
+          finally and luckily one of our friend's cousins was willing to keep it
+          as a pet.
+        </p>
+        <p>And so, the kitten finally found its new home.</p>
+        <p>
+          Her new name is Snow White btw, check out her IG page:<a
+            href="https://www.instagram.com/snow.white0228/"
+            target="_blank"
+            >@snow.white0228</a
+          >.
+        </p>
+        <div class="down-img">
+          <img src="./cat/13.jpeg" class="down" />
+          <img src="./cat/14.jpg" class="down" />
+          <img src="./cat/15.jpg" class="down" />
+          <img src="./cat/16.jpg" class="down" />
+        </div>
+        <p>
+          When we brought Queen back to school, she seemed lost. She looked like
+          she had lost her loved one. When we put her back at the place she
+          liked to be, she would go back to the dark room, and search for the
+          small little kitty. But the kitty was already gone. Queen meowed to us
+          as if she was asking: where is my new friend? Where did you take her
+          to? Why would you separate her from me? Am I not doing a great job to
+          take care of her? But that is the only way to let you stay here and
+          keep the kitten safe... We don't know if what we were doing was the
+          right way.
+        </p>
+        <p>
+          Just like any other day, Queen continued to sit on our laps and sleep
+          till the bell rang, cuddled towards us gently, and meowed whenever we
+          brought her food.
+        </p>
+        <p>
+          After the whole lockdown chaos (March 2020 lol), when our school
+          finally reopened after 3 months, Queen was nowhere to be seen.
+        </p>
+        <p>She was gone.</p>
+        <p>
+          Bad ending I know, but at least Snow White gets to live a healthy life
+          :[
+        </p>
+      </div>
+    <!-- <div class="right">
+        <div class="side-img">
+          <img src="./cat/2.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/4.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/6.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/8.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/10.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/12.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/14.jpg" />
+        </div>
+        <div class="side-img">
+          <img src="./cat/16.jpg" />
+        </div>
+      </div>
+    </div>
+    --> 
+
+
+    <div class="down-img">
+      <img src="./cat/18.jpg" class="down" />
+      <img src="./cat/20.jpg" class="down" />
+      <img src="./cat/17.jpg" class="down" />
+      <img src="./cat/19.jpg" class="down" />
+    </div>
+  </body>
+</html>
